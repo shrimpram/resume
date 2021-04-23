@@ -1,0 +1,195 @@
+\documentclass{article}
+
+\usepackage[letterpaper, margin=0.5in]{geometry}
+
+% Allows hyperlinks
+\usepackage{hyperref}
+% For more compact lists.
+\usepackage{paralist}
+% Use all of the page
+\usepackage{fullpage}
+% For math functions like aligning
+\usepackage{amsmath}
+% To set tables that wrap text
+\usepackage{tabularx}
+% Enables many symbols like bullets or tildes
+\usepackage{textcomp}
+
+% Removes paragraph indentation
+%\setlength{\parindent}{0pt}
+% Removes section numbering
+\setcounter{secnumdepth}{0}
+% Removes page numbering
+\pagenumbering{gobble}
+
+%--------------------------------------------------
+% This section taken from Brennen
+% <https://p1k3.com/2006/10/3/>
+%--------------------------------------------------
+\usepackage{pgf}
+\usepackage{xxcolor}
+\usepackage{geometry}
+
+\definecolor{rulestartcolor}{rgb}{0,0,0}
+\definecolor{ruleendcolor}{rgb}{0.4,0.4,0.4}
+
+\newlength{\headerbuffer}
+\setlength{\headerbuffer}{2pt}
+\newlength{\secskip}
+\setlength{\secskip}{6pt}
+
+\newcommand{\pgfrule}[4]{%
+  \begin{pgfpicture}{0pt}{0pt}{#1}{#2}%
+    \pgfdeclarehorizontalshading{@ruleshading}{#2}{%
+      color(0pt)=(#3); color(#1)=(#4)%
+    }
+    \pgfputat{\pgfxy(0,0)}{\pgfbox[left,bottom]{\pgfuseshading{@ruleshading}}}
+  \end{pgfpicture}%
+}
+
+\newcommand{\lrule}[2]{\pgfrule{#1}{#2}{rulestartcolor}{ruleendcolor}}
+\newcommand{\rrule}[2]{\pgfrule{#1}{#2}{ruleendcolor}{rulestartcolor}}
+
+\renewcommand{\section}[1]{%
+  \goodbreak\vspace{\secskip}%
+  \par\nointerlineskip\noindent{\textsc{\large\makebox[\linewidth][l]{#1}}}\vspace{\headerbuffer}\par\nointerlineskip\noindent%
+  \lrule{\linewidth}{0.4pt}%
+  \vspace{\headerbuffer}\par\nointerlineskip}
+
+\renewcommand{\subsection}[1]{%
+  \goodbreak\vspace{\secskip}\par\nointerlineskip\vspace{-1em}{\scshape \flushleft{#1}:}\par%
+}
+%--------------------------------------------------
+% End section taken from Brennen
+%--------------------------------------------------
+
+\begin{document}
+
+\begin{center}
+    {\Huge \bfseries Shreeram Modi}
+\end{center}
+
+\begin{center}
+    Lynbrook HS 2022 $\cdot$ shreerammodi10@gmail.com $\cdot$ \href{https://linkedin.com/in/shreeram-modi}{linkedin.com/in/shreeram-modi}
+\end{center}
+
+\bigskip
+
+\section{Education}
+\subsection{High School}
+\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
+    \textbf{Lynbrook High School} & \textbf{San Jose, CA}\\
+    \textit{Aug 2018 -- Jun 2022} & \textit{GPA: 3.875}
+\end{tabularx}
+
+
+\subsection{Concurrent Enrollment}
+\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
+    \textbf{West Valley College} & \textbf{Courses:}\\
+    \textit{Summer 2020} & \textit{BUSN 28 -- Business Law}\\
+\end{tabularx}
+%\goodbreak \hspace{-1.25em} Courses:
+%\begin{compactitem}
+%    \item BUSN 28 -- Business Law
+%\end{compactitem}
+
+\vspace{\secskip}
+
+\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
+    \textbf{De Anza College} & \textbf{Courses:}\\
+    \textit{Winter 2020} & \textit{POLI 5 -- Intro to Political Thought and Theory}\\
+    \textit{Spring 2021} & \textit{ANTH 2 -- Cultural Anthropology}\\
+\end{tabularx}
+%\goodbreak \hspace{-1.25em} Courses:
+%\begin{compactitem}
+%    \item POLI 5 -- Intro to Political Thought and Theory
+%    \item ANTH 2 -- Cultural Anthropology
+%\end{compactitem}
+
+\vspace{\secskip}
+
+\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
+    \textbf{Florida Virtual High School} & \textbf{Courses:}\\
+    \textit{Winter 2020} & \textit{AP Macroeconomic}\\
+\end{tabularx}
+%\goodbreak \hspace{-1.25em} Courses:
+%\begin{compactitem}
+%    \item AP Macroeconomics
+%\end{compactitem}
+
+\vspace{\secskip}
+
+\subsection{Standardized Testing}
+
+\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
+    \textbf{SAT -- 1550}\\
+    \textit{March 2020}\\
+\end{tabularx}
+
+\vspace{\secskip}
+
+\section{Experience}
+
+\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
+    \textbf{Speech and Debate} & \textbf{Lynbrook High School}\\
+    \textit{Lincoln Douglas Debate Team Captain} & \textit{May 2020 -- Present}\\
+\end{tabularx}
+\begin{compactitem}
+\item Leading a team of \textasciitilde{}20 Lincoln Douglas debaters
+\item Developing curriculum and lesson plans for novice debaters
+\item Competing in and reaching elimination rounds at national tournaments
+\item Increased team's clear rate at tournaments by 300\%
+\end{compactitem}
+
+\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
+    \textit{Debate Mentor} & \textit{Oct 2019 -- Present}\\
+\end{tabularx}
+\begin{compactitem}
+\item Volunteering twice a week to work teach and train \textasciitilde{}20 students at local middle school's debate program
+\item Judging debate rounds and providing individualized feedback
+\item Conducting drills tailored to each student's specific needs
+\end{compactitem}
+
+\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
+    \textit{Camp Instructor} & \textit{Summer 2019 -- Present (Summers)}\\
+\end{tabularx}
+\begin{compactitem}
+\item Teaching speech and debate to \textasciitilde{}10 middle and high school students at a yearly two week summer camp
+\item Creating engaging activities and games for debaters
+\item Ensuring camp safety and maintaining a learning environment for students
+\item Tracking the progress and success of students over the camp period
+\end{compactitem}
+
+\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
+    \textbf{Break the Outbreak} & \textbf{Dublin, CA}\\
+    \textit{San Jose Chapter Co-Founder} & \textit{June 2020 -- Present}\\
+\end{tabularx}
+\begin{compactitem}
+\item Initiated and brought together group of students to donate PPE to businesses affected by the COVID-19 pandemic
+\item Organizing contact and demand lists, calling businesses for donations, guiding team of PPE makers to maximize efficiency
+\item Donated hundreds of PPE items
+\item Featured on the \href{https://www.sjeconomy.com/why-san-jose/covid-19-guidance/local-suppliers}{\underline{San Jose Office of Economic Development's website}} as the top COVID-19 resource
+\end{compactitem}
+
+\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
+    \textbf{Rishi Kumar for Congress} & \textbf{District 18, CA}\\
+    \textit{Fellow} & \textit{Mar 2021 -- Present}\\
+\end{tabularx}
+\begin{compactitem}
+\item Intern for Rishi Kumar's run for the 2022 Congress Election
+\item Writing and editing op-eds on topics such as Congressional term limits, COVID-19, and Bay Area life
+\item Collaborating with a team of writers to maximize efficiency, ensure quality of projects, and meet weekly deadlines
+\end{compactitem}
+
+\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
+    \textbf{Rancho Rinconada Recreation and Park District} & \textbf{Cupertino, CA}\\
+    \textit{Swim Instructor} & \textit{Summer 2019}\\
+\end{tabularx}
+\begin{compactitem}
+\item Coached \textasciitilde{}10 kids of all ages and skill levels in swimming
+\item Effectively utilized bi-weekly reports to assess growth of students
+\item Connected with parents to build positive relationships and improve customer satisfaction
+\end{compactitem}
+
+    
+\end{document}
