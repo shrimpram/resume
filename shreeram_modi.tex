@@ -27,34 +27,15 @@
 % This section taken from Brennen
 % <https://p1k3.com/2006/10/3/>
 %--------------------------------------------------
-\usepackage{pgf}
-\usepackage{xxcolor}
-\usepackage{geometry}
-
-\definecolor{rulestartcolor}{rgb}{0,0,0}
-\definecolor{ruleendcolor}{rgb}{0.4,0.4,0.4}
-
 \newlength{\headerbuffer}
 \setlength{\headerbuffer}{2pt}
 \newlength{\secskip}
 \setlength{\secskip}{8pt}
 
-\newcommand{\pgfrule}[4]{%
-  \begin{pgfpicture}{0pt}{0pt}{#1}{#2}%
-    \pgfdeclarehorizontalshading{@ruleshading}{#2}{%
-      color(0pt)=(#3); color(#1)=(#4)%
-    }
-    \pgfputat{\pgfxy(0,0)}{\pgfbox[left,bottom]{\pgfuseshading{@ruleshading}}}
-  \end{pgfpicture}%
-}
-
-\newcommand{\lrule}[2]{\pgfrule{#1}{#2}{rulestartcolor}{ruleendcolor}}
-\newcommand{\rrule}[2]{\pgfrule{#1}{#2}{ruleendcolor}{rulestartcolor}}
-
 \renewcommand{\section}[1]{%
   \goodbreak\vspace{\secskip}%
   \par\nointerlineskip\noindent{\textsc{\large\makebox[\linewidth][l]{#1}}}\vspace{\headerbuffer}\par\nointerlineskip\noindent%
-  \lrule{\linewidth}{0.4pt}%
+  \rule{\linewidth}{0.4pt}%
   \vspace{\headerbuffer}\par\nointerlineskip}
 
 \renewcommand{\subsection}[1]{%
