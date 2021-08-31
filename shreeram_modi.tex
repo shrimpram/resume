@@ -1,105 +1,68 @@
-\documentclass{article}
+\documentclass[letterpaper]{resume-shreeram}
 
-\usepackage[letterpaper, margin=0.5in]{geometry}
-
-% Allows hyperlinks
 \usepackage[colorlinks = true,
             linkcolor = blue,
             urlcolor  = blue,
             citecolor = blue,
             anchorcolor = blue]{hyperref}
-% For more compact lists.
-\usepackage{paralist}
-% Use all of the page
-\usepackage{fullpage}
-% For math functions like aligning
-\usepackage{amsmath}
-% To set tables that wrap text
-\usepackage{tabularx}
-% Enables many symbols like bullets or tildes
-\usepackage{textcomp}
 
-% Removes paragraph indentation
-%\setlength{\parindent}{0pt}
-% Removes section numbering
+\usepackage{amsmath}
+
+\usepackage{paralist}
+
+\usepackage{fullpage}
+
 \setcounter{secnumdepth}{0}
-% Removes page numbering
+
 \pagenumbering{gobble}
 
-%--------------------------------------------------
-% This section taken from Brennen
-% <https://p1k3.com/2006/10/3/>
-%--------------------------------------------------
-\newlength{\headerbuffer}
-\setlength{\headerbuffer}{2pt}
-\newlength{\secskip}
-\setlength{\secskip}{8pt}
+\author{Shreeram Modi}
 
-\renewcommand{\section}[1]{%
-  \goodbreak\vspace{\secskip}%
-  \par\nointerlineskip\noindent{\textsc{\large\makebox[\linewidth][l]{#1}}}\vspace{\headerbuffer}\par\nointerlineskip\noindent%
-  \rule{\linewidth}{0.4pt}%
-  \vspace{\headerbuffer}\par\nointerlineskip}
-
-\renewcommand{\subsection}[1]{%
-  \goodbreak\vspace{\secskip}\par\nointerlineskip\vspace{-1em}{\scshape \flushleft{#1}:}\par%
-}
-%--------------------------------------------------
-% End section taken from Brennen
-%--------------------------------------------------
+\webpage{shreerammodi10@gmail.com}
 
 \begin{document}
 
-\begin{center}
-    {\Huge \bfseries Shreeram Modi}
-\end{center}
-
-\begin{center}
-    Lynbrook HS 2022 $\cdot$ \href{mailto:shreerammodi10@gmail.com}{shreerammodi10@gmail.com} $\cdot$ \href{https://linkedin.com/in/shreeram-modi}{linkedin.com/in/shreeram-modi}
-
-    \href{https://gist.githubusercontent.com/Shrimpram/9c75268e25eae09e2dcaac0373767c16/raw/0d72769b4b6958eebfaf943b0292e9196425c252/pubkey.asc}{EA88 EA07 26E9 6CBF 6365 3966 163B 16EE 76ED 24CE}
-\end{center}
-
-\bigskip
-
-
+\maketitle
 
 \section{Education}
-\subsection{High School}
-\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
-    \textbf{Lynbrook High School} & \textbf{San Jose, CA}\\
-    \textit{Aug 2018 -- Jun 2022 (Projected)} & \textit{GPA: 3.9}\\
-    Awards: Red White \& Blue Award from Social Studies Department
-\end{tabularx}
 
+\subsection{High School}
+
+\affiliation{Lynbrook High School}{San Jose, CA}{Aug 2018 --- Jun 2022 (Projected)}{GPA:\@ 3.9}
+\begin{compactitem}
+  \item Awards: Red White \& Blue Award from social studies department
+\end{compactitem}
 
 \subsection{Concurrent Enrollment}
-\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
-    \textbf{De Anza College} & \textbf{Cupertino, CA}\\
-    \textit{Winter 2021 -- Summer 2021} & \textit{GPA: 4.0}
-\end{tabularx}
 
-\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
-    \textbf{Florida Virtual High School} & \textbf{Orlando, FL}\\
-    \textit{Winter 2021 -- Summer 2021} & \textit{GPA: 4.0}\\
-\end{tabularx}
+\affiliation{De Anza College}{Cupertino, CA}{Winter 2021 --- Summer 2021}{GPA:\@ 4.0}
+\begin{compactitem}
+  \item Courses:
+  \begin{compactitem}
+    \item Intro to Political Thought and Theory
+    \item Cultural Anthropology
+    \item Intro to Sociology
+  \end{compactitem}
+\end{compactitem}
 
+\affiliation{Florida Virtual High School}{Orlando, FL}{Winter 2021 --- Summer 2021}{GPA:\@ 4.0}
+\begin{compactitem}
+  \item Courses:
+  \begin{compactitem}
+    \item AP Macroeconomics
+    \item AP Computer Science
+    \item AP Human Geography
+  \end{compactitem}
+\end{compactitem}
 
 \subsection{Standardized Testing}
-\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
-    \textbf{SAT -- 1550}\\
-    \textit{March 2021}\\
-\end{tabularx}
 
-
-\vspace{\secskip}
+\affiliation{SAT:\@ 1550}{}{March 2021}{}
 
 
 \section{Experience}
-\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
-    \textbf{Speech and Debate} & \textbf{Lynbrook High School}\\
-    \textit{Lincoln Douglas Debate Team Captain} & \textit{May 2020 -- Present}\\
-\end{tabularx}
+
+\affiliation{Speech and Debate}{Lynbrook High School}{Lincoln Douglas Debate Team Captain}{May 2020 --- Present}
 \begin{compactitem}
     \item Leading a team of \textasciitilde{}20 Lincoln Douglas debaters
     \item Initiated and implemented funding program that allowed teams to access club funds
@@ -107,18 +70,14 @@
     \item Increased team's clear rate at tournaments by 300\%
 \end{compactitem}
 
-\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
-    \textit{Debate Mentor} & \textit{Oct 2019 -- Present}\\
-\end{tabularx}
+\position{Debate Mentor}{Oct 2019 --- Present}
 \begin{compactitem}
-    \item Volunteering twice a week to work teach and train \textasciitilde{}20 students at local middle school's debate program
+    \item Volunteering twice a week to teach and train \textasciitilde{}20 students at local middle school's debate program
     \item Judging debate rounds and providing individualized feedback
     \item Conducting drills tailored to each student's specific needs
 \end{compactitem}
 
-\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
-    \textit{Camp Instructor} & \textit{Summer 2019 -- Present (Summers)}\\
-\end{tabularx}
+\position{Camp Instructor}{Summer 2019 --- Present (Summers)}
 \begin{compactitem}
     \item Teaching speech and debate to \textasciitilde{}10 middle and high school students at a yearly two week summer camp
     \item Creating engaging activities and games for debaters
@@ -126,17 +85,13 @@
     \item Tracking the progress and success of students over the camp period
 \end{compactitem}
 
-\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
-    \textbf{Break the Outbreak} & \textbf{Dublin, CA}\\
-    \textit{Marketing Committee Assistant Chair} & \textit{April 2021 -- Present}\\
-\end{tabularx}
+\affiliation{Break the Outbreak}{Dublin, CA}{Marketing Committee Assistant Chair}{Apr 2021 --- Present}
 \begin{compactitem}
     \item Managing social media platforms and ensuring positive brand image
     \item Optimizing page organization and feed to maximize engagement
 \end{compactitem}
-\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
-    \textit{San Jose Chapter Co-Founder} & \textit{June 2020 -- Present}\\
-\end{tabularx}
+
+\position{San Jose Chapter Co-Founder}{June 2020 --- Present}
 \begin{compactitem}
     \item Initiated and brought together group of students to donate PPE to businesses affected by the COVID-19 pandemic
     \item Organizing contact and demand lists, calling businesses for donations, guiding team of PPE makers to maximize efficiency
@@ -144,24 +99,33 @@
     \item Featured on the \href{https://www.sjeconomy.com/why-san-jose/covid-19-guidance/local-suppliers}{San Jose Office of Economic Development's website} as a COVID-19 resource
 \end{compactitem}
 
-\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
-    \textbf{Rishi Kumar for Congress} & \textbf{District 18, CA}\\
-    \textit{Fellow} & \textit{Mar 2021 -- Present}\\
-\end{tabularx}
+\affiliation{Rishi Kumar for Congress}{District 18, CA}{Fellow}{Mar 2021 --- Present}
 \begin{compactitem}
     \item Intern for Rishi Kumar's run for the 2022 Congress Election
     \item Writing and editing op-eds on topics such as Congressional term limits, COVID-19, and Bay Area life
     \item Collaborating with a team of writers to maximize efficiency, ensure quality of projects, and meet weekly deadlines
 \end{compactitem}
 
-\goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
-    \textbf{Rancho Rinconada Recreation and Park District} & \textbf{Cupertino, CA}\\
-    \textit{Swim Instructor} & \textit{Summer 2019}\\
-\end{tabularx}
+\affiliation{Rancho Rinconada Recreation and Park District}{Cupertino, CA}{Swim Instructor}{Summer 2019}
 \begin{compactitem}
     \item Coached \textasciitilde{}10 kids of all ages and skill levels in swimming
     \item Effectively utilized bi-weekly reports to assess growth of students
     \item Connected with parents to build positive relationships and improve customer satisfaction
+\end{compactitem}
+
+\affiliation{Silicon Valley Animal Control Authority}{Santa Clara, CA}{Animal Socializer}{Sept 2017 --- Present}
+\begin{compactitem}
+  \item Volunteering on weekends to socialize animals at local shelter
+  \item Working with animals to reinforce positive behavior and ensure readiness for home life
+\end{compactitem}
+
+
+\section{Hobbies}
+
+\position{Guitar}{2018 --- Present}
+\begin{compactitem}
+  \item Have been playing guitar for over ten years
+  \item Performed live shows at various venues such as Forager in San Jose
 \end{compactitem}
 
 \end{document}
