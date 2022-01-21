@@ -12,7 +12,7 @@
 % long as this copyright notice is maintained.
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{resume_brennen}
+\ProvidesClass{resume-shreeram}
 
 \LoadClassWithOptions{article}
 
@@ -155,8 +155,8 @@
     \textit{#3} & \textit{#4}
   \end{tabularx}
 }
-% <Shreeram> For when you have multiply positions at a single location,
-% using affiliation will cause them to space out
+% <Shreeram> For when you have multiple positions at a single location,
+% using affiliation will cause them to have unwanted space
 \newcommand{\position}[2]{
   \goodbreak\vspace{\secskip}\par\noindent\begin{tabularx}{\linewidth}{Xr}
     \textit{#1} & \textit{#2}
