@@ -34,7 +34,7 @@
 %\RequirePackage{times}
 %\RequirePackage[T1]{fontenc}
 
-\RequirePackage[tmargin=1in,bmargin=1in]{geometry}
+\RequirePackage[vmargin=0.25in,hmargin=0.5in]{geometry}
 
 \definecolor{rulestartcolor}{rgb}{0,0,0}
 \definecolor{ruleendcolor}{rgb}{0.4,0.4,0.4}
